@@ -15,7 +15,7 @@ if __name__ == "__main__":
     if r == 0:
         call(['cowsay', '-fclippy', message0])
     elif r == 1:
-        call(['cowsay', '-fclippy', message1]
+        call(['cowsay', '-fclippy', message1])
     elif r == 2:
         call(['cowsay', '-fclippy', message2])
     elif r == 3:
