@@ -1,9 +1,11 @@
 #!/bin/python
 
 from subprocess import call
-from random import randint
+from random import randint, seed
+from time import ctime # for seeding
 
 if __name__ == "__main__":
+    seed(ctime())
     import sys
 
     r = randint(0,3)
