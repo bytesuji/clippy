@@ -8,7 +8,7 @@ if __name__ == "__main__":
     seed(time())
     import sys
 
-    r = randint(0,5)
+    r = randint(0,7)
 
     message0 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like to install Pulse Audio?")
     message1 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like to delete the root directory?")
@@ -16,6 +16,8 @@ if __name__ == "__main__":
     message3 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like me to reboot your computer?")
     message4 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like me to pipe myself to /dev/null?")
     message5 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like me to disable your keyboard?")
+    message6 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like me to help you tie a noose?")
+    message7 = ("Hi, I'm Clippy, your shell assisstant. Command not found:\n\n" + sys.argv[1] + "\n\nWould you like me to uninstall the Linux kernel?")
 
     if r == 0:
         call(['cowsay', '-fclippy', message0])
@@ -29,3 +31,7 @@ if __name__ == "__main__":
         call(['cowsay', '-fclippy', message4])
     elif r == 5:
         call(['cowsay', '-fclippy', message5])
+    elif r == 6:
+        call(['cowsay', '-fclippy', message6])
+    elif r == 7:
+        call(['cowsay', '-fclippy', message7])
